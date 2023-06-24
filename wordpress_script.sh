@@ -4,7 +4,7 @@
 if ! command -v docker &> /dev/null; then
     echo "Docker is not installed. Installing Docker..."
 
-    # Add commands here to install Docker based on the operating system
+# Add commands here to install Docker based on the operating system
 
     sudo apt-get update
     sudo apt-get install docker.io -y
