@@ -16,7 +16,7 @@ fi
 if ! command -v docker-compose &> /dev/null; then
     echo "Docker Compose is not installed. Installing Docker Compose..."
 
-    # Add commands here to install Docker Compose
+ # Add commands here to install Docker Compose
     sudo apt-get update
     sudo apt-get install docker-compose -y
 fi
