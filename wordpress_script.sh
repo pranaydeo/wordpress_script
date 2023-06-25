@@ -59,6 +59,18 @@ services:
       - "$site_dir:/var/www/html"
     depends_on:
       - db
+   db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+    volumes:
+      - db_data:/var/lib/mysql
+volumes:
+  db_data:
+EOF   
   
 
 
