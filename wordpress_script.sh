@@ -41,5 +41,24 @@ sudo sh -c "echo '127.0.0.1 $site_name' >> /etc/hosts"
 
 site_dir="/var/www/$site_name"
 sudo mkdir -p "$site_dir"
+
 # Create docker-compose.yml file
+cat <<EOF > docker-compose.yml
+version: '3'
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: admin123
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - "$site_dir:/var/www/html"
+    depends_on:
+      - db
+  
+
 
