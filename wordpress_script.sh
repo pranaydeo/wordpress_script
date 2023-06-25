@@ -41,3 +41,5 @@ sudo sh -c "echo '127.0.0.1 $site_name' >> /etc/hosts"
 
 site_dir="/var/www/$site_name"
 sudo mkdir -p "$site_dir"
+# Create docker-compose.yml file
+
