@@ -2,6 +2,7 @@
 This script automates the deployment of a WordPress site using Docker and Docker Compose. It sets up a LEMP stack (Linux,MySQL,PHP) running inside containers and allows you to create, enable/disable, and delete WordPress sites.
 
 #Prerequisites
+
 Ensure that Docker is installed on your system
 Make sure Docker Compose is also installed
 
