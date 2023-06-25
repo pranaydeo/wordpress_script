@@ -34,3 +34,10 @@ if [ $# -ne 1 ]; then
   echo "Please provide a site name as an argument."
   exit 1
 fi
+
+site_name=$1
+
+sudo sh -c "echo '127.0.0.1 $site_name' >> /etc/hosts"
+
+site_dir="/var/www/$site_name"
+sudo mkdir -p "$site_dir"
