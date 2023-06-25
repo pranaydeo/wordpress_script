@@ -4,6 +4,7 @@ This script automates the deployment of a WordPress site using Docker and Docker
 #Prerequisites
 
 Ensure that Docker is installed on your system
+
 Make sure Docker Compose is also installed
 
 # Clone the repository:
