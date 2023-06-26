@@ -70,7 +70,4 @@ services:
       - db_data:/var/lib/mysql
 volumes:
   db_data:
-EOF   
-  
-
-
+EOF 
