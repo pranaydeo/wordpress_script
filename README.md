@@ -17,5 +17,7 @@ cd wordpress_script
 # Give permission to the script which you have cloned
 sudo chmod 777 wordpress_script.sh
 
+# Excuting the Script & create a wordpress site
+sudo ./wordpress_script.sh example.com
 
 
