@@ -26,5 +26,7 @@ sudo docker-compose ps
 # To start the containers:
 sudo docker-compose start
 
+# To stop the containers:
+
 
 
