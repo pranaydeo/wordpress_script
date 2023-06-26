@@ -97,3 +97,24 @@ if sudo docker-compose ps | grep -q "Up"; then
             echo "Invalid option. The site $site_name remains unchanged."
             ;;
     esac
+
+     # Additional subcommand to delete the site
+    read -p "Do you want to delete the site? (yes/no): " delete
+    case $delete in
+        yes)
+            sudo docker-compose down
+            sudo rm -rf "$site_dir"
+            sudo sed -i "/$site_name/d" /etc/hosts
+            echo "The site $site_name has been deleted."
+            ;;
+        no)
+            echo "The site $site_name remains unchanged."
+            ;;
+        *)
+            echo "Invalid option. The site $site_name remains unchanged."
+            ;;
+    esac
+
+else
+    echo "Failed to start the WordPress site $site_name."
+fi
