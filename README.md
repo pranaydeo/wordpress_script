@@ -21,5 +21,6 @@ sudo chmod 777 wordpress_script.sh
 sudo ./wordpress_script.sh example.com
 
 # To check the status of the containers:
+sudo docker-compose ps
 
 
