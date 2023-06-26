@@ -74,3 +74,7 @@ EOF
 
 # Start the containers
 sudo docker-compose up -d
+
+# Check if the containers are running
+if sudo docker-compose ps | grep -q "Up"; then
+   echo "WordPress site $site_name has been created successfully."
