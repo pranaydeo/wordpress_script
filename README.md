@@ -30,4 +30,6 @@ sudo docker-compose start
 sudo docker-compose stop
 
 #To delete the containers and associated volumes:
+docker-compose down
+
 
