@@ -20,4 +20,6 @@ sudo chmod 777 wordpress_script.sh
 # Excuting the Script & create a wordpress site
 sudo ./wordpress_script.sh example.com
 
+# To check the status of the containers:
+
 
