@@ -71,3 +71,6 @@ services:
 volumes:
   db_data:
 EOF 
+
+# Start the containers
+sudo docker-compose up -d
