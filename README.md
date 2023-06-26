@@ -27,6 +27,6 @@ sudo docker-compose ps
 sudo docker-compose start
 
 # To stop the containers:
-
+sudo docker-compose stop
 
 
