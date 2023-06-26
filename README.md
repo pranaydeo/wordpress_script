@@ -23,4 +23,6 @@ sudo ./wordpress_script.sh example.com
 # To check the status of the containers:
 sudo docker-compose ps
 
+# To start the containers:
+
 
