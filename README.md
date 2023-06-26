@@ -32,6 +32,6 @@ sudo docker-compose stop
 #To delete the containers and associated volumes:
 docker-compose down
 
-Note :- To access the WordPress site running on the EC2 instance, you need to use the public IP address like http://<public-ip>
+Note :- To access the WordPress site running on the EC2 instance, you need to use the public IP address like http://public-ip
 but please make sure to open the necessary inbound port (e.g., port 80) in your EC2 instance's security group to allow HTTP traffic to reach the instance.
 
