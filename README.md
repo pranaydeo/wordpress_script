@@ -24,5 +24,7 @@ sudo ./wordpress_script.sh example.com
 sudo docker-compose ps
 
 # To start the containers:
+sudo docker-compose start
+
 
 
