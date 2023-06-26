@@ -29,4 +29,5 @@ sudo docker-compose start
 # To stop the containers:
 sudo docker-compose stop
 
+#To delete the containers and associated volumes:
 
