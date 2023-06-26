@@ -78,3 +78,22 @@ sudo docker-compose up -d
 # Check if the containers are running
 if sudo docker-compose ps | grep -q "Up"; then
    echo "WordPress site $site_name has been created successfully."
+
+  # Prompt the user to open the site in a browser
+    echo "Please open http://$site_name in a browser to access the site."
+
+    # Additional subcommand to enable/disable the site
+    read -p "Do you want to enable or disable the site? (enable/disable): " enable_disable
+    case $enable_disable in
+        enable)
+            sudo docker-compose start
+            echo "The site $site_name has been enabled."
+            ;;
+        disable)
+            sudo docker-compose stop
+            echo "The site $site_name has been disabled."
+            ;;
+        *)
+            echo "Invalid option. The site $site_name remains unchanged."
+            ;;
+    esac
